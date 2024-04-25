@@ -10,9 +10,12 @@
 <body>
   <!-- DIV que será manipulada -->
   <div id="manipula">
-    <p>Com base nos argumentos apresentados na aula, é possivel entender que uma coisa é uma coisa e outra coisa é outra coisa, admito que não concordo nem discordo, muito pelo contrário.
+    <p>Com base nos argumentos apresentados na aula, é possivel entender que uma coisa é uma coisa e outra coisa é outra
+      coisa, admito que não concordo nem discordo, muito pelo contrário.
     </p>
-    <p class="paragrafo">É factivel que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar.Agora, mais do que nunca, é a hora, afinal, o importante é o que importa, pois onde quer que você esteja, você sempre estará lá.
+    <p class="paragrafo">É factivel que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é
+      uma sucessão de sucessivos que sucedem sucessivamente sem cessar.Agora, mais do que nunca, é a hora, afinal, o
+      importante é o que importa, pois onde quer que você esteja, você sempre estará lá.
     </p>
   </div>
   <!-- FIM da DIV que foi manipulada -->
@@ -24,37 +27,37 @@
   <!-- DIV que armazenará todos os botões -->
   <div id="botoes">
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Atualizar" onclick="window.location.reload()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Tamanho fonte" onclick="mudatamanhofonte()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Mudar cor da fonte" onclick="mudarcorfonte()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Mudar Cor de Fundo" onclick="mudarcorfundo()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="italico" onclick="italico()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="negrito" onclick="negrito()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Incluir borda" onclick="border()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Tira borda" onclick="excluirborder()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="Esconder div" onclick="esconderdiv()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="aparece div" onclick="reaparecediv()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
-    <input type="button" value="X" />
+    <input type="button" value="nao" onclick="nao()" />
     <!--Fim Botão X-->
     <!-- Botão X - -->
     <input type="button" value="X" />
@@ -86,68 +89,61 @@
 
   <script> // Começa a brincadeira com JS
     // Botão X - xx
-    function x() {
-
+    var tamanhoPadrao = true
+    function mudatamanhofonte() {
+      if (tamanhoPadrao) {
+        tamanhoPadrao = false
+        document.getElementById("manipula").style.fontSize = "30px"
+      }
+      else {
+        document.getElementById("manipula").style.fontSize = "24px"
+        tamanhoPadrao = true
+      }
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
-}
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
-}
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
-}
-//fim do Botão X
-    // Botão X - xx
-    function x() {
-
+    function mudarcorfonte() {
+      document.getElementById("manipula").style.color = "#ffffff"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function mudarcorfundo() {
+      document.getElementById("manipula").style.backgroundColor = "black"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function italico() {
+      document.getElementById("manipula").style.fontStyle = "italic"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function negrito() {
+      document.getElementById("manipula").style
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function border() {
+      document.getElementById("manipula").style.border = "20px"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function excluirborder() {
+      document.getElementById("manipula").style.border = "0px"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function esconderdiv() {
+      document.getElementById("manipula").style.display = "none"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function reaparecediv() {
+      document.getElementById("manipula").style.display = "block"
     }
     //fim do Botão X
     // Botão X - xx
-    function x() {
-
+    function nao() {
+      document.getElementsByClassName("chamada")[0].innerHTML = "Neste Botão NÂO"
     }
     //fim do Botão X
     // Botão X - xx
@@ -159,7 +155,22 @@
     function x() {
 
     }
-//fim do Botão X
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
+    // Botão X - xx
+    function x() {
+
+    }
+    //fim do Botão X
   </script> <!-- Termina a brincadeira com JS -->
 
   <br>
